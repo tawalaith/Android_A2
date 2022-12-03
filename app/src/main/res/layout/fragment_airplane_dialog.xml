@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="281dp"
+    android:layout_height="249dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <RadioGroup
+        android:id="@+id/airplaneRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="149dp">
+
+
+        <RadioButton
+            android:id="@+id/as1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Airbus A330" />
+
+        <RadioButton
+            android:id="@+id/as2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boeing 747" />
+
+        <RadioButton
+            android:id="@+id/as3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Embraer E-Jet Family" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitAirplaneBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preview" />
+
+    <Button
+        android:id="@+id/cancelAirplaneBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cancel" />
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
